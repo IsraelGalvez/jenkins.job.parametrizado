@@ -14,7 +14,7 @@ job('Prueba docker') {
   }
   steps {
     dockerBuildAndPublish {
-      repositoryName('joseexample/tarea1')
+      repositoryName('joseexample/nodejsapp3')
       tag('${GIT_REVISION,length=7}')
       registryCredentials('docker-hub')
       forcePull(false)
