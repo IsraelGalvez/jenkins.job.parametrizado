@@ -6,6 +6,9 @@ job('Aplicacion hijo') {
       node / gitConfigEmail('corvus164@gmail.com')
         }
     }
+  wrappers {
+    nodejs('nodejs')
+  }
   steps {
     dockerBuildAndPublish {
       repositoryName('joseexample/jobImagen')
