@@ -3,7 +3,7 @@ job('Prueba docker') {
   scm {
     git('https://github.com/IsraelGalvez/jenkins.job.parametrizado.git', 'main') { node ->
       node / gitConfigName('IsraelGalvez')
-      node / gitConfigEmail('galvez.rli.51@gmail.com')
+      node / gitConfigEmail('nakama_51@hotmail.com')
         }
     }
   triggers {
