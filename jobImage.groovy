@@ -1,4 +1,4 @@
-job('Aplicacion hijo') {
+job('Prueba docker') {
   description('Aplicacion hijo de Job2')
   scm {
     git('https://github.com/IsraelGalvez/jenkins.job.parametrizado.git', 'main') { node ->
@@ -6,6 +6,9 @@ job('Aplicacion hijo') {
       node / gitConfigEmail('galvez.rli.51@gmail.com')
         }
     }
+  triggers {
+    scm('H/7 * * * *')
+  }
   wrappers {
     nodejs('nodejs')
   }
