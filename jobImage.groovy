@@ -2,8 +2,8 @@ job('Aplicacion hijo') {
   description('Aplicacion hijo de Job2')
   scm {
     git('https://github.com/IsraelGalvez/jenkins.job.parametrizado.git', 'master') { node ->
-      node / gitConfigName('buhm0')
-      node / gitConfigEmail('corvus164@gmail.com')
+      node / gitConfigName('IsraelGalvez')
+      node / gitConfigEmail('galvez.rli.51@gmail.com')
         }
     }
   wrappers {
