@@ -1,4 +1,4 @@
-job('Prueba docker 2') {
+job('Prueba docker') {
   description('Aplicacion hijo de Job2')
   scm {
     git('https://github.com/IsraelGalvez/jenkins.job.parametrizado.git', 'main') { node ->
