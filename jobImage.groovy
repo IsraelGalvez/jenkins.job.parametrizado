@@ -8,7 +8,7 @@ job('Aplicacion hijo') {
     }
   steps {
     dockerBuildAndPublish {
-      repositoryName('macloujulian/nodejsapp')
+      repositoryName('joseexample/jobImagen')
       tag('${GIT_REVISION,length=7}')
       registryCredentials('docker-hub')
       forcePull(false)
